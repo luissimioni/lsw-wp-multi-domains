@@ -1,9 +1,6 @@
 <?php
 
 /**
- * @since             1.0.0
- * @package           Lsw_Wp_Multi_Domains
- *
  * @wordpress-plugin
  * Plugin Name:       LSW WP Multi Domains
  * Plugin URI:        https://wordpress.org/plugins/lsw-wp-multi-domains/
@@ -51,16 +48,10 @@ register_deactivation_hook( __FILE__, 'deactivate_lsw_wp_multi_domains' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/lsw_wp_multi_domains.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-lsw-wp-multi-domains.php';
 
 /**
  * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    1.0.0
  */
 function run_lsw_wp_multi_domains() {
 
